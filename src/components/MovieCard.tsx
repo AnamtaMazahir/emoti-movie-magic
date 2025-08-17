@@ -1,47 +1,49 @@
-import { Star, Calendar, Clock } from 'lucide-react';
+import { Star, Calendar, Clock, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
-
-interface Movie {
-  id: number;
-  title: string;
-  year: number;
-  rating: number;
-  duration: string;
-  genre: string;
-  description: string;
-  poster: string;
-}
+import { ProcessedMovie } from '@/lib/tmdb';
 
 interface MovieCardProps {
-  movie: Movie;
+  movie: ProcessedMovie;
   index: number;
+  onClick?: () => void;
 }
 
-export const MovieCard = ({ movie, index }: MovieCardProps) => {
+export const MovieCard = ({ movie, index, onClick }: MovieCardProps) => {
   return (
     <Card 
       className="
         group bg-gradient-card border-border/50 overflow-hidden 
         transition-all duration-500 hover:shadow-card hover:scale-105
-        animate-scale-in
+        animate-scale-in cursor-pointer
       "
       style={{ animationDelay: `${index * 100}ms` }}
+      onClick={onClick}
     >
       <div className="aspect-[2/3] overflow-hidden relative">
-        <img
-          src={movie.poster}
-          alt={movie.title}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
+        {movie.poster ? (
+          <img
+            src={movie.poster}
+            alt={movie.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            loading="lazy"
+          />
+        ) : (
+          <div className="w-full h-full bg-secondary flex items-center justify-center">
+            <span className="text-muted-foreground">No Image</span>
+          </div>
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="flex items-center gap-2 text-white/90 text-sm">
+          <div className="flex items-center gap-2 text-white/90 text-sm flex-wrap">
             <Star className="w-4 h-4 fill-accent text-accent" />
             <span className="font-medium">{movie.rating}</span>
             <Calendar className="w-4 h-4 ml-2" />
             <span>{movie.year}</span>
             <Clock className="w-4 h-4 ml-2" />
             <span>{movie.duration}</span>
+          </div>
+          <div className="mt-2">
+            <ExternalLink className="w-4 h-4 text-white/70" />
           </div>
         </div>
       </div>
