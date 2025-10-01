@@ -1,73 +1,39 @@
-# Welcome to your Lovable project
+# 🚀 Emoti-Movie Magic: Suggests movie based on mood
 
-## Project info
+**Live Demo:** **[https://lovable.dev/projects/b221e579-7b4b-47dc-945d-587e8c0cfb8c](https://lovable.dev/projects/b221e579-7b4b-47dc-945d-587e8c0cfb8c)**
 
-**URL**: https://lovable.dev/projects/b221e579-7b4b-47dc-945d-587e8c0cfb8c
+<img width="1398" height="915" alt="image" src="https://github.com/user-attachments/assets/75ae7478-35a6-45b8-bc18-9354f7028d4f" />
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+## 📖 About The Project
 
-**Use Lovable**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b221e579-7b4b-47dc-945d-587e8c0cfb8c) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+*"This is a full-stack web application that allows users to get movie recommendations using AI. The goal was to create a fun and easy-to-use tool for users "*
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project was built using a modern and efficient tech stack:
 
-Follow these steps:
+* **Front-End:** React, TypeScript, Vite
+* **Styling:** Tailwind CSS
+* **UI Components:** shadcn-ui
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🤖 Development Process & Acknowledgements
 
-# Step 3: Install the necessary dependencies.
-npm i
+This project was initiated using the AI coding assistant, **loveable.dev**, to rapidly bootstrap the initial structure and components. My role was to:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+1.  Define the project requirements and core features.
+2.  Guide the AI with specific prompts to build the desired UI and logic.
+3.  Customize the generated code, particularly the styling and component layout, to match my vision.
+4.  Debug and refine the application to ensure full functionality.
 
-**Edit a file directly in GitHub**
+Using this tool was a great learning experience in leveraging AI for modern web development, allowing me to focus on high-level architecture and user experience.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b221e579-7b4b-47dc-945d-587e8c0cfb8c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
